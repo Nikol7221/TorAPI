@@ -145,7 +145,7 @@ docker run -d --name TorAPI -p 8443:8443 --restart=unless-stopped lifailon/torap
 
 ### Dockerfile
 
-You can build the image yourself from the project's source files using [dockerfile](dockerfile).
+You can build the image yourself from the project's source files using [dockerfile](/Dockerfile).
 
 Clone this repository:
 
@@ -154,7 +154,7 @@ git clone https://github.com/Lifailon/TorAPI
 cd TorAPI
 ```
 
-Edit variables or other settings in the `dockerfile` if necessary:
+Edit variables or other settings in the `Dockerfile` if necessary:
 
 ```shell
 ENV PROXY_ADDRESS="192.168.3.100"

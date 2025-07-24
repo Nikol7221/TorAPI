@@ -1,8 +1,11 @@
 version: "3.8"
 services:
   torapi:
-    image: lifailon/torapi:latest
     container_name: TorAPI
+    image: lifailon/torapi:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       - PORT=${PORT}
       - PROXY_ADDRESS=${PROXY_ADDRESS}
